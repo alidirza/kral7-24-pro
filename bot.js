@@ -84,6 +84,18 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'en iyi sunucu') {
+    msg.reply('Professional Game Server');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'yapımcın kim') {
+    msg.reply('');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
